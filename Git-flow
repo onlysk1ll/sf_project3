@@ -1,0 +1,40 @@
+Наименование веток:
+- main
+- Develop
+- Feature 
+- Release 
+- Hotfix 
+
+main
+Продакшен среда. Стабильный код
+
+Develop
+Разработка. 
+
+Feature branches
+Могут бранчеватся от develop
+Должны вмержится в develop
+Naming convention: любые названия кроме master, develop, release-*, или hotfix-*
+
+Release branches
+Могут бранчеватся от develop
+Должны вмержится в develop и master
+Naming convention: release-*
+Помните, до того как вмержить код в релиз ветку, необходимо добавить ей тег с версией релиза (например "0.9 hotfix")
+
+Hotfix branches
+Могут бранчеватся от master
+Должны вмержится в develop и master
+Naming convention: hotfix-*
+
+
+Репозиторий находится https://github.com/onlysk1ll/sf_project3/new/main.
+Для измений требуется работать по вышеуказаному git-flow
+При входе требуется настроить git config, по примеру из данного gitconfig
+
+- создать свою ветку;
+- внести изменения в нее;
+- слить эти изменения с основной кодовой базой.
+
+Для того чтобы создать свою ветку требуется:
+git branch "наименование ветки"
