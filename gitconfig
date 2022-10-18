@@ -1,0 +1,5 @@
+[user]
+	name = Daniyar Kuatbekov
+	email = Dkuatbekov@gmail.com
+[alias]
+	history = log --graph
