@@ -1,5 +1,12 @@
+Репозиторий находится по адресу https://github.com/onlysk1ll/sf_project3
+
+1. Требуется настроить ssh ключи на своем ПК
+2. Требуется создать локальную версию данного репозитория:
+git clone git@github.com:onlysk1ll/sf_project3.git
+3. Требуется создать свою ветку и вносить изменения в нее
+
 Наименование веток:
-- main
+- main/master
 - Develop
 - Feature 
 - Release 
@@ -27,14 +34,23 @@ Hotfix branches
 Должны вмержится в develop и master
 Naming convention: hotfix-*
 
-
-Репозиторий находится https://github.com/onlysk1ll/sf_project3/new/main.
+Репозиторий находится https://github.com/onlysk1ll/sf_project3
 Для измений требуется работать по вышеуказаному git-flow
-При входе требуется настроить git config, по примеру из данного gitconfig
+При входе требуется настроить git config, по примеру https://github.com/onlysk1ll/sf_project3/blob/master/gitconfig
 
-- создать свою ветку;
-- внести изменения в нее;
-- слить эти изменения с основной кодовой базой.
 
 Для того чтобы создать свою ветку требуется:
 git branch "наименование ветки"
+Для перехода в выбранную ветку:
+git checkout "наименование ветки"
+
+Внести изменение в ветку:
+1. Создать изменение
+2. git add .
+3. git commit -m "комментарий данного изменения"
+
+Слить эти изменения с основной кодовой базой:
+1. git checkout "выбранную ветку"
+2. git merge "наименование ветки", в данном случае "master"
+
+Удачи!
